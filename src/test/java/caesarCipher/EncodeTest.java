@@ -12,7 +12,7 @@ public class EncodeTest {
     @Test
     public void newEncode_getsPlain_2() {
         Encode testEncode = new Encode("hello2", 4);
-        assertEquals("faby", testEncode.getPlain());
+        assertEquals("hello2", testEncode.getPlain());
     }
     @Test
     public void getEncode_getsmyKey() {

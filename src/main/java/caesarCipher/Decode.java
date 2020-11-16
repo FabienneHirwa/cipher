@@ -21,7 +21,7 @@ public class Decode {
         String coded = "";
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-        for (int i = 26; i < plain.length(); i--) {
+        for (int i = 0; i < plain.length(); i++) {
             if (alphabet.indexOf(plain.substring(i, i + 1)) != -1) {
                 int letter = alphabet.indexOf((plain.substring(i, i + 1)));
 //                int codeLetter=letter+myKey;
