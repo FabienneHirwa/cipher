@@ -1,28 +1,20 @@
 package caesarCipher;
-
 public class Encode {
     private String plain;
     private int myKey;
-
     public Encode(String plain, int myKey) {
         this.plain = plain;
         this.myKey= myKey;
     }
-
     public String getPlain(){
         return this.plain;
     }
-
     public int getMyKey(){
         return this.myKey;
     }
-
-
     public static String encrypt(String plain, int myKey){
-
         String coded="";
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
-
         for(int i=0; i<plain.length(); i++){
             if(alphabet.indexOf(plain.substring(i,i+1))!=-1){
                 int letter=alphabet.indexOf((plain.substring(i,i+1)));
@@ -33,12 +25,8 @@ public class Encode {
             else{
                 coded+=plain.substring(i,i+1);
             }
-        }
-
-        return coded;
+        }return coded;
     }
-
-
 }
 
 

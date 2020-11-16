@@ -15,12 +15,6 @@ public class App {
         Integer key  = Integer.parseInt(theKey);
         System.out.println("Encoded text: " + Encode.encrypt(plainText,key));
         System.out.println("Decoded text: " + Decode.decrypt(Encode.encrypt(plainText,key),key));
-
-
-
-
-
-
     }
 
 
