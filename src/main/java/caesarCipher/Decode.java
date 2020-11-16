@@ -1,5 +1,4 @@
 package caesarCipher;
-
 public class Decode {
     private String plain;
     private int myKey;
@@ -36,3 +35,4 @@ public class Decode {
         return coded;
     }
 }
+
